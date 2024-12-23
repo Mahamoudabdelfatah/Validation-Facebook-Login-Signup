@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style2.css">
+    <title>Facebook-SignUp</title>
+</head>
+<body>
+    
+    <section id="registration-page">
+        <form class="signup-form" action="fb.html" onsubmit="return handleForm()">
+            
+            <div class="form-header">
+                <h1>Create Account</h1>
+            </div>
+            
+            <div class="form-body">
+            
+                <div class="row">
+                    <div class="input-group">
+                        <label class="test userNameLabel text-primary" id="fnamelabel">First Name :</label>
+                        <input class="userNameInput" title="Required-{FirstName only without any spaces}" autocomplete="off" id="fname" type="text" placeholder="Enter your first name" >
+                    </div>
+                    <div class="input-group">
+                        <label id="lnamelabel" class="lastNameLabel text-primary">Last Name :</label>
+                        <input  class="lastNameInput" title="Required-{LastName only without any spaces}" autocomplete="off" id="lname" type="text" placeholder="Enter your last name">
+                    </div>
+                </div>
+            
+                <div class="row">
+                    <div class="input-group">
+                        <label class="emailLabel text-primary" id="emaillabel">Email :</label>
+                        <input class="emailInput" title="Email shall be like : {name@domain.com}" autocomplete="off" id="email" type="text" placeholder="Enter your email address">
+                    </div>
+                    <div class="input-group">
+                        <label class="phoneLabel text-primary" id="phonelabel">Phone Number :</label>
+                        <input class="phoneInput" title="Phone Number shall be 11 numbers like {01xx-xxx-xxxx}" autocomplete="off" id="phone" type="text" placeholder="Enter your phone number Egypt">
+                    </div>  
+                </div>
+                <div class="row">
+                    <div class="input-group">
+                        <label class="passwordLabel text-primary" id="passwordlabel">Password :</label>
+                        <input class="passwordInput" title="Password shall be more than 5 characters" id="password" type="password" placeholder="Enter your password">
+                    </div>
+                    <div class="input-group">
+                        <label class="password2Label text-primary" id="password2label">Confirm Password :</label>
+                        <input class="password2Input" title="Password confirmation shall be the same with password" id="password2" type="password" placeholder="Confirm you password">
+                    </div>
+                </div>
+            
+                <div class="row">
+                    <div class="input-group">
+                        <label id="mainGender" class="labelGender text-primary">Gender :</label>
+                        <div class="radio-group">
+                            <div>
+                                <label for="male" id="test">
+                                    <input  type="radio" name="gender" id="male" class="maleInput">
+                                    Male
+                                </label>
+                            </div>
+                            <div>
+                                <label for="female" id="test">
+                                    <input  type="radio" name="gender" id="female" class="femaleInput">
+                                    Female
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label id="mainBirth" class="birthLabel text-primary">Birthdate :</label>
+                        <div class="radio-group">
+                            <div>
+                                <label for="birthdate">
+                                    <input type="date" id="birthdate" class="birthInput">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            <input type="reset" value="Reset" class="btn" onclick="resetSign()"></input>
+            <input type="submit" value="Register" class="btn"></input>     
+        </form>
+    </section>
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/signup.js"></script>
+
+
+</body>
+</html>
